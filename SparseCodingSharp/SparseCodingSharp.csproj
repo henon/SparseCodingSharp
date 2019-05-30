@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CodeMinion\src\Numpy\Numpy.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Numpy">
+      <HintPath>DependsOn\Numpy.dll</HintPath>
+    </Reference>
+    <Reference Include="Python.Included">
+      <HintPath>DependsOn\Python.Included.dll</HintPath>
+    </Reference>
+    <Reference Include="Python.Runtime">
+      <HintPath>DependsOn\Python.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
